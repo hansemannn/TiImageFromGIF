@@ -6,8 +6,7 @@
  */
 #import "TiModule.h"
 
-@interface DeMarcelpociotImagefromgifModule : TiModule 
-{
+@interface DeMarcelpociotImagefromgifModule : TiModule {
 }
 
 @end

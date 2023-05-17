@@ -4,18 +4,16 @@
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  */
-#import "UIImage+animatedGIF.h"
 #import "TiUIImageView+AnimatedGIF.h"
+#import "UIImage+animatedGIF.h"
 
 @implementation TiUIImageView (AnimatedGIF)
 
--(void)setGif_:(id)arg
-{
-    NSLog(@"Args: %@", arg);
-    NSURL *loadImage = [TiUtils toURL:arg proxy:self.proxy];
-    NSLog(@"Image URL: %@", loadImage);
-    UIImage *gif = [UIImage animatedImageWithAnimatedGIFURL:loadImage];
-    [self setImage_:gif];
+- (void)setGif_:(id)arg {
+  NSURL *loadImage = [TiUtils toURL:arg proxy:self.proxy];
+  UIImage *gif = [UIImage animatedImageWithAnimatedGIFURL:loadImage];
+
+  [self setImage_:gif];
 }
 
 @end

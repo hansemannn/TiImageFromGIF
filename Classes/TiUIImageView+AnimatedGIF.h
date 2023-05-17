@@ -10,10 +10,8 @@
 #import "TiUIImageView.h"
 
 @interface TiUIImageView (AnimatedGIF) {
-
-    
 }
 
--(void)setGif_:(id)arg;
+- (void)setGif_:(id)arg;
 
 @end
